@@ -1,4 +1,4 @@
-# Mmenu-Rails
+# mmenu-rails
 
 This is a ruby gem for the asset pipeline which includes [Besite's][besite] [jQuery.mmenu][library] library.
 
@@ -34,7 +34,7 @@ Modify your `app/assets/stylesheets/application.css`, adding:
 
   ```css
   *= require mmenu
-  ```:
+  ```
 
 ## Customization
 

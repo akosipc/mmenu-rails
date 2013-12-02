@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/mmenu-rails.png)](http://badge.fury.io/rb/mmenu-rails)
+
 # mmenu-rails
 
 This is a ruby gem for the asset pipeline which includes [Besite's][besite] [jQuery.mmenu][library] library.

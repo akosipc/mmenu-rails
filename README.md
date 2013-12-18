@@ -28,20 +28,39 @@ Or install it yourself as:
 
 Modify your `app/assets/javascripts/application.js`, adding:
 
-  ```javascript
+  ```
   //= require mmenu
   ```
 
 Modify your `app/assets/stylesheets/application.css`, adding:
 
-  ```css
+  ```
   *= require mmenu
   ```
 
 ## Customization
 
-Currently, there are a few customizations based on the new version of mmenu.
-I'll be adding them in the next release of mmenu-rails.
+To cherry-pick what library/plugin you'll be using in mmenu-rails here is the list:
+
+#### Javascript
+
+  ```
+  //= require mmenu-counters
+  //= require mmenu-dragopen
+  //= require mmenu-header
+  //= require mmenu-labels
+  //= require mmenu-searchfield
+  ```
+
+#### CSS
+
+  ```
+  *= require mmenu-counters
+  *= require mmenu-dragopen
+  *= require mmenu-header
+  *= require mmenu-labels
+  *= require mmenu-searchfield
+  ```
 
 ## Contributing
 

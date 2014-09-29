@@ -40,27 +40,56 @@ Modify your `app/assets/stylesheets/application.css`, adding:
 
 ## Customization
 
-To cherry-pick what library/plugin you'll be using in mmenu-rails here is the list:
+Mmenu has various add-ons and extensions available. To use these in your project, simply include the relevant files in your Javascript and CSS manifests. 
 
 #### Javascript
 
   ```
+  //= require mmenu-buttonbars
   //= require mmenu-counters
   //= require mmenu-dragopen
+  //= require mmenu-fixedelements
+  //= require mmenu-footer
   //= require mmenu-header
   //= require mmenu-labels
+  //= require mmenu-offcanvas
   //= require mmenu-searchfield
+  //= require mmenu-toggles
   ```
 
 #### CSS
 
   ```
-  *= require mmenu-counters
+  *= require mmenu-buttonbars
+  *= require mmenu-counter
   *= require mmenu-dragopen
+  *= require mmenu-footer
   *= require mmenu-header
   *= require mmenu-labels
   *= require mmenu-searchfield
+  *= require mmenu-toggles
+
+  *= require mmenu-effects
+  *= require mmenu-fullscreen
+  *= require mmenu-iconbar
+  *= require mmenu-positioning
+  *= require mmenu-themes
+  *= require mmenu-widescreen
   ```
+
+You can also include all add-ons and extensions (not recommended for production!) by using
+
+  ```
+  //= require mmenu-all
+  ```
+
+and
+
+  ```
+  *= require mmenu-all
+  ```
+
+in your application.js and application.css, respectively.
 
 ## Contributing
 

@@ -1,3 +1,3 @@
 module MmenuRails
-  VERSION = "0.0.2"
+  VERSION = "4.5.5"
 end

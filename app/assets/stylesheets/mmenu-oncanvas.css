@@ -1,5 +1,5 @@
 /*
-	jQuery.mmenu panels CSS
+  jQuery.mmenu panels CSS
 */
 .mm-menu.mm-horizontal > .mm-panel {
   -webkit-transition: -webkit-transform 0.4s ease;
@@ -34,14 +34,23 @@
     overflow-y: auto;
     box-sizing: border-box;
     padding: 20px;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%); }
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0); }
     .mm-menu > .mm-panel.mm-opened {
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%); }
+      -webkit-transform: translate(0%, 0);
+      -moz-transform: translate(0%, 0);
+      -ms-transform: translate(0%, 0);
+      -o-transform: translate(0%, 0);
+      transform: translate(0%, 0); }
     .mm-menu > .mm-panel.mm-subopened {
-      -webkit-transform: translateX(-30%);
-      transform: translateX(-30%); }
+      -webkit-transform: translate(-30%, 0);
+      -moz-transform: translate(-30%, 0);
+      -ms-transform: translate(-30%, 0);
+      -o-transform: translate(-30%, 0);
+      transform: translate(-30%, 0); }
     .mm-menu > .mm-panel.mm-highest {
       z-index: 1; }
   .mm-menu .mm-list {
@@ -155,6 +164,9 @@
     width: 7px;
     height: 7px;
     -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     margin-bottom: -5px;
     position: absolute;
@@ -176,14 +188,18 @@
     border-color: transparent; }
 .mm-menu.mm-vertical .mm-list li.mm-opened > .mm-panel {
   display: block; }
-.mm-menu.mm-vertical .mm-list > li.mm-opened > a.mm-subopen {
+.mm-menu.mm-vertical .mm-list > li > a.mm-subopen {
   height: 40px; }
-  .mm-menu.mm-vertical .mm-list > li.mm-opened > a.mm-subopen:after {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+  .mm-menu.mm-vertical .mm-list > li > a.mm-subopen:after {
     top: 16px;
-    right: 16px; }
-.mm-menu.mm-vertical .mm-list > li.mm-opened.mm-label > a.mm-subopen {
+    bottom: auto; }
+.mm-menu.mm-vertical .mm-list > li.mm-opened > a.mm-subopen:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+.mm-menu.mm-vertical .mm-list > li.mm-label > a.mm-subopen {
   height: 25px; }
 
 html.mm-opened .mm-page {

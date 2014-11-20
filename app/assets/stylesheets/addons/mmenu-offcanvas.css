@@ -2,7 +2,12 @@
 	jQuery.mmenu offcanvas addon CSS
 */
 .mm-page {
+  box-sizing: border-box;
+  position: relative; }
+
+.mm-slideout {
   -webkit-transition: -webkit-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
   transition: transform 0.4s ease; }
 
 html.mm-opened {
@@ -10,9 +15,6 @@ html.mm-opened {
   position: relative; }
   html.mm-opened body {
     overflow: hidden; }
-  html.mm-opened .mm-page {
-    box-sizing: border-box;
-    position: relative; }
 
 html.mm-background .mm-page {
   background: inherit; }
@@ -42,18 +44,24 @@ html.mm-blocking #mm-blocker {
   min-width: 140px;
   max-width: 440px; }
 
-html.mm-opening .mm-page,
-html.mm-opening #mm-blocker {
+html.mm-opening .mm-slideout {
   -webkit-transform: translate(80%, 0);
+  -moz-transform: translate(80%, 0);
+  -ms-transform: translate(80%, 0);
+  -o-transform: translate(80%, 0);
   transform: translate(80%, 0); }
 
 @media all and (max-width: 175px) {
-  html.mm-opening .mm-page,
-  html.mm-opening #mm-blocker {
+  html.mm-opening .mm-slideout {
     -webkit-transform: translate(140px, 0);
+    -moz-transform: translate(140px, 0);
+    -ms-transform: translate(140px, 0);
+    -o-transform: translate(140px, 0);
     transform: translate(140px, 0); } }
 @media all and (min-width: 550px) {
-  html.mm-opening .mm-page,
-  html.mm-opening #mm-blocker {
+  html.mm-opening .mm-slideout {
     -webkit-transform: translate(440px, 0);
+    -moz-transform: translate(440px, 0);
+    -ms-transform: translate(440px, 0);
+    -o-transform: translate(440px, 0);
     transform: translate(440px, 0); } }

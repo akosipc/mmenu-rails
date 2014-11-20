@@ -61,11 +61,12 @@ Mmenu has various add-ons and extensions available. To use these in your project
 
   ```
   *= require mmenu-buttonbars
-  *= require mmenu-counter
+  *= require mmenu-counters
   *= require mmenu-dragopen
   *= require mmenu-footer
   *= require mmenu-header
   *= require mmenu-labels
+  *= require mmenu-offcanvas
   *= require mmenu-searchfield
   *= require mmenu-toggles
 
@@ -75,6 +76,7 @@ Mmenu has various add-ons and extensions available. To use these in your project
   *= require mmenu-positioning
   *= require mmenu-themes
   *= require mmenu-widescreen
+  *= require mmenu-oncanvas
   ```
 
 You can also include all add-ons and extensions (not recommended for production!) by using

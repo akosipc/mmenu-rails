@@ -1,14 +1,17 @@
 /*
-	jQuery.mmenu widescreen extension CSS
-	
-	To use on widescreens only, include it using a mediaquery:
-	<link type="text/css" href="mmenu-widescreen.css" media="all and (min-width: 900px)"/>
+  jQuery.mmenu widescreen extension CSS
+  
+  To use on widescreens only, include it using a mediaquery:
+  <link type="text/css" href="mmenu-widescreen.css" media="all and (min-width: 900px)"/>
 */
-html, body {
-  min-height: 100%;
+html,
+body,
+html.mm-opened,
+html.mm-opened body {
   overflow: auto; }
 
 body {
+  padding-left: 30% !important;
   position: relative; }
 
 #mm-blocker {
@@ -18,22 +21,26 @@ body {
   box-shadow: none !important;
   background: inherit;
   box-sizing: border-box;
-  width: 70% !important;
-  min-height: 100%;
+  min-height: 100vh;
   height: auto !important;
   margin: 0 !important;
   position: relative !important;
-  left: 30% !important;
   top: 0 !important;
   z-index: 1; }
 
+.mm-slideout {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important; }
+
 .mm-menu {
   width: 30% !important;
-  z-index: 0; }
-  .mm-menu.mm-top, .mm-menu.mm-right, .mm-menu.mm-bottom {
-    top: 0 !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: 0 !important; }
+  z-index: 0;
+  top: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 0 !important; }
   .mm-menu:first-child, .mm-menu.mm-current {
     display: block; }

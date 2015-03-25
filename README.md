@@ -29,38 +29,79 @@ Or install it yourself as:
 Modify your `app/assets/javascripts/application.js`, adding:
 
   ```
-  //= require mmenu
+  //= require jquery.mmenu
   ```
 
 Modify your `app/assets/stylesheets/application.css`, adding:
 
   ```
-  *= require mmenu
+  *= require jquery.mmenu
   ```
 
 ## Customization
 
-To cherry-pick what library/plugin you'll be using in mmenu-rails here is the list:
+Mmenu has various add-ons and extensions available. To use these in your project, simply include the relevant files in your Javascript and CSS manifests.
 
 #### Javascript
 
   ```
-  //= require mmenu-counters
-  //= require mmenu-dragopen
-  //= require mmenu-header
-  //= require mmenu-labels
-  //= require mmenu-searchfield
+  //= require jquery.mmenu.autoheight
+  //= require jquery.mmenu.backbutton
+  //= require jquery.mmenu.buttonbars
+  //= require jquery.mmenu.counters
+  //= require jquery.mmenu.dividers
+  //= require jquery.mmenu.dragopen
+  //= require jquery.mmenu.fixedelements
+  //= require jquery.mmenu.footer
+  //= require jquery.mmenu.header
+  //= require jquery.mmenu.oncanvas
+  //= require jquery.mmenu.offcanvas
+  //= require jquery.mmenu.searchfield
+  //= require jquery.mmenu.sectionindexer
+  //= require jquery.mmenu.toggles
   ```
 
 #### CSS
 
   ```
-  *= require mmenu-counters
-  *= require mmenu-dragopen
-  *= require mmenu-header
-  *= require mmenu-labels
-  *= require mmenu-searchfield
+  *= require jquery.mmenu.autoheight
+  *= require jquery.mmenu.buttonbars
+  *= require jquery.mmenu.counters
+  *= require jquery.mmenu.dividers
+  *= require jquery.mmenu.dragopen
+  *= require jquery.mmenu.footer
+  *= require jquery.mmenu.header
+  *= require jquery.mmenu.height
+  *= require jquery.mmenu.oncanvas
+  *= require jquery.mmenu.offcanvas
+  *= require jquery.mmenu.searchfield
+  *= require jquery.mmenu.sectionindexer
+  *= require jquery.mmenu.toggles
+
+  *= require jquery.mmenu.borderstyle
+  *= require jquery.mmenu.effects
+  *= require jquery.mmenu.fullscreen
+  *= require jquery.mmenu.iconbar
+  *= require jquery.mmenu.multiline
+  *= require jquery.mmenu.pageshadow
+  *= require jquery.mmenu.positioning
+  *= require jquery.mmenu.themes
+  *= require jquery.mmenu.widescreen
   ```
+
+You can also include all add-ons and extensions (not recommended for production!) by using
+
+  ```
+  //= require jquery.mmenu.all
+  ```
+
+and
+
+  ```
+  *= require jquery.mmenu.all
+  ```
+
+in your application.js and application.css, respectively.
 
 ## Contributing
 
